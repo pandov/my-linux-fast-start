@@ -40,6 +40,10 @@
 		gesture swipe down	4 xdotool key ctrl+alt+0
 		gesture pinch in	xdotool key ctrl+super+Down
 		gesture pinch out	xdotool key ctrl+super+Up
+		gesture swipe left	3 xdotool key shift+ctrl+alt+Right
+		gesture swipe right	3 xdotool key shift+ctrl+alt+Left
+		gesture swipe up	3 xdotool key shift+ctrl+alt+Down
+		gesture swipe down	3 xdotool key shift+ctrl+alt+Up
 		gesture swipe up	3 xdotool key ctrl+alt+Down
 		gesture swipe down	3 xdotool key ctrl+alt+Up
 		gesture swipe right	3 xdotool key ctrl+alt+Left
