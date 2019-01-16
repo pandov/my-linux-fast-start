@@ -84,6 +84,10 @@
 		3) sudo apt-get update
 		4) sudo apt-get install arc-theme
 
+# OPTIMIZATION
+	1) sudo apt install preload
+	2) sudo apt install indicator-cpufreq
+
 # ADDONS
 	1) Visual Studio Code
 	2) Android Studio + Genymotion
