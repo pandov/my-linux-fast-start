@@ -1,8 +1,8 @@
 # UBUNTU SETUP
-	fat32/ext2	/boot	256
-	ext4		/	16384
-	swap			8192
-	ext4		/home	...
+	fat32/ext2	/boot		256
+	ext4		/		16384
+	swap				8192
+	ext4		/home		...
 
 # SETUP
 	$ sudo apt install git
