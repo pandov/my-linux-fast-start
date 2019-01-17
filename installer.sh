@@ -8,10 +8,10 @@ sudo apt update
 sudo apt install apt-fast
 
 printf "\n[INSTALL CPU CONTROLLER]\n\n\n"
-sudo add-apt-repository ppa:linrunner/tlp
-sudo apt update
-sudo apt install tlp tlp-rdw
-sudo tlp start
+# sudo add-apt-repository ppa:linrunner/tlp
+# sudo apt-fast update
+# sudo apt-fast install tlp tlp-rdw
+# sudo tlp start
 sudo apt-fast install indicator-cpufreq
 
 printf "\n[INSTALL UTILS]\n\n\n"
@@ -89,5 +89,5 @@ echo "ADD TO AUTO LAUNCH:"
 echo "/usr/bin/libinput-gestures"
 echo "plank"
 echo "indicator-cpufreq"
-echo "tlp"
+# echo "tlp"
 echo "preload"
