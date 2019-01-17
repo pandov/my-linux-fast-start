@@ -1,6 +1,7 @@
 #!/bin/sh
 sudo apt update
 sudo apt upgrade
+sudo apt autoremove
 
 printf "\n[INSTALL APT-FAST]\n\n\n"
 sudo add-apt-repository ppa:apt-fast/stable
@@ -40,9 +41,9 @@ libinput-gestures-setup restart
 sudo rm -rf libinput-gestures
 
 printf "\n[INSTALL TOUCHPAD TOUCHPAD CALIBRATION]\n\n\n"
-cp -b ./touchpad_settings.sh ~/
-chmod +x ~/touchpad_settings.sh
-gsettings set org.gnome.settings-daemon.peripherals.input-devices hotplug-command "/home/$USER/touchpad_settings.sh"
+cp -b ./touchpad_settings.sh ~/.config/
+chmod +x ~/.config/touchpad_settings.sh
+gsettings set org.gnome.settings-daemon.peripherals.input-devices hotplug-command "/home/$USER/.config/touchpad_settings.sh"
 
 printf "\n[INSTALL PLANK]\n\n\n"
 sudo apt-add-repository ppa:docky-core/stable
