@@ -68,7 +68,7 @@ sudo apt-fast install google-chrome-stable
 printf "\n[INSTALL ANDROID STUDIO]\n\n\n"
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-fast update
-sudo apt-fast --force-yes install oracle-java8-installer oracle-java8-set-default
+sudo apt-fast install oracle-java8-installer oracle-java8-set-default
 sudo apt-fast install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 # wget https://dl.google.com/dl/android/studio/ide-zips/3.3.0.20/android-studio-ide-182.5199772-linux.zip
 # sudo unzip android-studio-ide-182.5199772-linux.zip -d /opt
@@ -85,6 +85,9 @@ sudo apt-fast install software-properties-common apt-transport-https
 # sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 # sudo apt-fast install code
 sudo umake web visual-studio-code --accept-license
+
+# printf "\n[IMPORT DCONF SETTINGS...]\n\n\n"
+# sudo cat dconf-settings.ini > dconf load /
 
 echo "ADD TO AUTO LAUNCH:"
 echo "/usr/bin/libinput-gestures"
