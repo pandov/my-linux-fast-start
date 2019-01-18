@@ -13,6 +13,8 @@ sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-fast update
 sudo apt-fast install tlp tlp-rdw
 sudo tlp start
+sudo service tlp start
+cp -b ./tlp /etc/default/
 sudo apt-fast install indicator-cpufreq
 
 printf "\n[INSTALL UTILS]\n\n\n"
@@ -95,3 +97,4 @@ echo "plank"
 echo "indicator-cpufreq"
 echo "tlp"
 echo "preload"
+
